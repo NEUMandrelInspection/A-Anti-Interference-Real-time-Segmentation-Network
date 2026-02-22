@@ -1,3 +1,3 @@
 # A-Anti-Interference-Real-time-Segmentation-Network
 Work in progress...
-![image](Other/AIRSegNet.png)
+![image](./Other/AIRSegNet.png)
