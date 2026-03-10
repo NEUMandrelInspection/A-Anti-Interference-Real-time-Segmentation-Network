@@ -1,3 +1,6 @@
 # A-Anti-Interference-Real-time-Segmentation-Network
-Work in progress...
+
+# Framework:
 ![image](./Other/AIRSegNet.png)
+
+
