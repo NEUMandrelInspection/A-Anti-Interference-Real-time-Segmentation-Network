@@ -48,11 +48,30 @@ pip install -r requirements.txt
 **3. Data Preparation:**
 Download the MSD-SII dataset and place it in the `01Dataset` directory.
 
-**4. Training & Evaluation:**
-```bash
-# Train the model
-python train.py 
+**4. Execution (Training & Inference):**
+This repository uses a unified script (`main.py`) for both training and inference. You can control the pipeline by modifying the configuration flags at the top of `main.py`.
 
-# Evaluate the model
-python test.py 
-```
+* **To Train from scratch:**
+    Open `main.py` and set:
+    ```python
+    epochs = 30                # Set to your desired number of epochs
+    use_pretrained_model = 0   # 0: Train from scratch
+    ```
+    Then run:
+    ```bash
+    python main.py
+    ```
+
+* **To Run Inference / Prediction:**
+    Open `main.py` and set:
+    ```python
+    epochs = 0                 # Skip training
+    use_pretrained_model = 1   # Load the weights from default_best_model_path
+    only_val_output = 1        # 1: Infer on validation set only, 0: Both train and val sets
+    mask_output_only = 1       # 1: Output mask images only, 0: Output triplet images
+    ```
+    Then run:
+    ```bash
+    python main.py
+    ```
+    *Note: The predicted masks and evaluation metrics will be saved in the `02Output/` directory.*
