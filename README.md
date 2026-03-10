@@ -15,7 +15,6 @@ The overall architecture of the proposed AIRSegNet is shown below:
 
 ## 📊 MSD-SII Dataset
 We are releasing the **Mandrel Surface Defect under Strong Industrial Interference (MSD-SII)** benchmark, the first industrial mandrel defect dataset collected under strong interference conditions.
-* **Scale:** Contains 12,230 training images and 3,055 testing defect images.
 * **Complexity:** Includes severe defect-like interferences (e.g., water droplets, graphite contamination, oxide scale) to reflect real-world manufacturing challenges.
 
 🔗 **Dataset Download Link:** [Insert your dataset link here, e.g., BaiduNetdisk / Google Drive]
@@ -43,16 +42,4 @@ python train.py
 
 # Evaluate the model
 python test.py 
-```
-
-## 📖 Citation
-If you find our code or the MSD-SII dataset useful for your research, please consider citing our work:
-
-```bibtex
-@article{he2026airsegnet,
-  title={An Edge-Based Online Mandrel Surface Defect Inspection System under Strong Industrial Interference},
-  author={He, Qing and Li, Yiteng and Peng, Wen},
-  journal={-},
-  year={2026}
-}
 ```
