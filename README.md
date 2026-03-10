@@ -13,11 +13,24 @@ The overall architecture of the proposed AIRSegNet is shown below:
 
 ![image](./Other/AIRSegNet.png)
 
-## 📊 MSD-SII Dataset
+## 📊 MSD-SII Dataset & Preparation
 We are releasing the **Mandrel Surface Defect under Strong Industrial Interference (MSD-SII)** benchmark, the first industrial mandrel defect dataset collected under strong interference conditions.
 * **Complexity:** Includes severe defect-like interferences (e.g., water droplets, graphite contamination, oxide scale) to reflect real-world manufacturing challenges.
 
 🔗 **Dataset Download Link:** [Insert your dataset link here, e.g., BaiduNetdisk / Google Drive]
+
+### Directory Structure
+After downloading the dataset, please organize it strictly according to the following structure:
+
+```text
+01Dataset/
+├── images/
+│   ├── train/
+│   └── val/
+└── labels/
+    ├── train/
+    └── val/
+```
 
 ## ⚙️ Installation & Quick Start
 
@@ -33,7 +46,7 @@ pip install -r requirements.txt
 ```
 
 **3. Data Preparation:**
-Download the MSD-SII dataset and place it in the `data/` directory.
+Download the MSD-SII dataset and place it in the `01Dataset` directory.
 
 **4. Training & Evaluation:**
 ```bash
