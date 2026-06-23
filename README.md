@@ -13,14 +13,15 @@ The overall architecture of the proposed AIRSegNet is shown below:
 
 ![image](./Other/AIRSegNet.png)
 
-## 🖼️ 芯棒表面缺陷检测系统
+## 🖼️ Mandrel Surface Defect Detection System
+![Industrial Background](./Other/Background.png)
 
-![工业背景](./Other/Background.png)
 To address the aforementioned challenges, this study develops an automated detection and evaluation system for mandrel surface defects.
 
-## 📷 环形相机进行360°扫描
-![环形摄像头采集](./Other/Imageacquisition.png)
-本图展示了用于在线检测的成像与采集端设计。为保证稳定、高质量的采集结果，系统采用了均匀蓝光照明子系统、同步多相机线扫描成像以及分布式相机。
+## 📷 360° Scanning Using an Annular Camera Array
+![Annular Camera Acquisition](./Other/Imageacquisition.png)
+
+This figure presents the design of the imaging and acquisition end for online detection. To ensure stable and high-quality acquisition results, the system adopts a uniform blue-light illumination subsystem, synchronized multi-camera line-scan imaging, and distributed cameras.
 
 ## 📊 MSD-SII Dataset & Preparation
 We are releasing the **Mandrel Surface Defect under Strong Industrial Interference (MSD-SII)** benchmark, the first industrial mandrel defect dataset collected under strong interference conditions[...[...]
