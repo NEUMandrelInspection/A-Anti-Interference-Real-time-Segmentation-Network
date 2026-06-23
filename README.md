@@ -4,17 +4,25 @@ This repository contains the official PyTorch implementation and the **MSD-SII**
 > **An Edge-Based Online Mandrel Surface Defect Inspection System under Strong Industrial Interference**
 
 ## 🌟 Overview
-This repository provides the code and dataset for automated mandrel surface defect inspection. At its core lies the Anti-Interference Real-time Segmentation Network (**AIRSegNet**), tailored to robustly segment submillimeter-scale defects from complex backgrounds on edge devices. 
+This repository provides the code and dataset for automated mandrel surface defect inspection. At its core lies the Anti-Interference Real-time Segmentation Network (**AIRSegNet**), tailored to rob[...]
 
-Deployed on Jetson edge nodes, AIRSegNet achieves an inference speed of **371 FPS**, meeting real-time inspection demands, and attains a mean Intersection over Union (IoU) of **0.57** with an ultralow false positive rate (FPR) of **0.0011**.
+Deployed on Jetson edge nodes, AIRSegNet achieves an inference speed of **371 FPS**, meeting real-time inspection demands, and attains a mean Intersection over Union (IoU) of **0.57** with an ultra[...]
 
 ## 🏗️ Framework
 The overall architecture of the proposed AIRSegNet is shown below:
 
 ![image](./Other/AIRSegNet.png)
 
+## 🖼️ 工业背景与环形摄像头
+
+![工业背景](./Other/Background.png)
+本图展示了我们的采集环境与典型工业背景，说明了数据采集过程中存在的强干扰来源。本研究开发了用于 mandrel 表面缺陷的自动检测与评估系统，以应对这些复杂的工业干扰。
+
+![环形摄像头采集](./Other/Image_acquistion.png)
+本图展示了用于在线检测的成像与采集端设计。为保证稳定、高质量的采集结果，系统采用了均匀蓝光照明子系统、同步多相机线扫描成像以及分布式边缘计算框架，从而实现对环形工件表面缺陷的实时检测与评估。
+
 ## 📊 MSD-SII Dataset & Preparation
-We are releasing the **Mandrel Surface Defect under Strong Industrial Interference (MSD-SII)** benchmark, the first industrial mandrel defect dataset collected under strong interference conditions.
+We are releasing the **Mandrel Surface Defect under Strong Industrial Interference (MSD-SII)** benchmark, the first industrial mandrel defect dataset collected under strong interference conditions[...]
 * **Complexity:** Includes severe defect-like interferences (e.g., water droplets, graphite contamination, oxide scale) to reflect real-world manufacturing challenges.
 
 🔗 **Dataset Download Link:** [Insert your dataset link here, e.g., BaiduNetdisk / Google Drive]
